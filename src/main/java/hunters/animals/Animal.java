@@ -6,6 +6,10 @@ public abstract class Animal {
 
     private int energy;
 
+    // Defino contructor sin argumentos como privado para exigir que siempre
+    // que se cree un Animal, se especificando un valor de energy
+    private Animal() {}
+
     protected Animal(int energy) {
         if (energy > MAX_ENERGY) {
             energy = MAX_ENERGY;

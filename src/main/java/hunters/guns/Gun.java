@@ -6,6 +6,10 @@ public abstract class Gun {
 
     private int power;
 
+    // Defino contructor sin argumentos como privado para exigir que siempre
+    // que se cree un Gun, se especificando un valor de power
+    private Gun() {}
+
     protected Gun(int power) {
         if (power > MAX_POWER) {
             power = MAX_POWER;
